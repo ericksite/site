@@ -1,0 +1,97 @@
+body {
+    background-image: url(./imagens/breaking_bad_temporada_5_plano_critico-2.jpg);
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.retangulo {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 60vw;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.retangulo p {
+    font-size: 8px;
+    text-align: center;
+    margin: 10px;
+}
+
+img {
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 5px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.inicial ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.inicial ul li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.inicial ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+}
+
+.inicial ul .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 5px 0;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.inicial ul li:hover .submenu {
+    display: block;
+}
+
+.inicial ul .submenu li {
+    margin: 0;
+}
+
+.inicial ul .submenu li a {
+    font-size: 12px;
+    padding: 8px 12px;
+}
